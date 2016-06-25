@@ -17,6 +17,7 @@ public class SparkConnect {
         long l = lines.count();
         List<String> list = lines.collect();
         System.out.println(l);
+        System.out.println(l);
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
