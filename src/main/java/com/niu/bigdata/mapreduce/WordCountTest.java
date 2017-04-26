@@ -29,6 +29,7 @@ public class WordCountTest {
         job.setMapOutputValueClass(IntWritable.class);
         job.setMapperClass(WCMapper.class);
         job.setReducerClass(WCReducer.class);
+        job.setNumReduceTasks(1);
         FileInputFormat.addInputPath(job,new Path(args[0]));
         Path outputPath = new Path(args[1]);
         if (fs.exists(outputPath)) {
