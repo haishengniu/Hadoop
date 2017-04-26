@@ -5,7 +5,7 @@ package com.niu.bigdata.mapreduce;
  */
 public class WordCountTest {
     public static void main(String[] args) {
-
+        System.out.println("aaaaa");
     }
 }
 
